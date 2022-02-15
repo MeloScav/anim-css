@@ -59,3 +59,21 @@ li:nth-child(even) {
     /* transform: rotate(30deg); */
     transform: skew(20deg, 20deg);
 }
+
+/* Transitions */
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background: cyan;
+    /* transition-property: background, transform; */
+    /* transition-duration: .5s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: cubic-bezier(.32,1,.83,.67); */
+    transition: all .5s ease-in-out;
+}
+
+.box:hover {
+    background: crimson;
+    transform: rotate(45deg);
+}
