@@ -1,5 +1,5 @@
 /* Pseudo-classes */
-#hov:hover{
+#hov:hover {
     background-color: red;
     color: white;
 }
@@ -12,11 +12,11 @@
     background: pink;
 }
 
-li:nth-child(odd){
+li:nth-child(odd) {
     background: red;
 }
 
-li:nth-child(even){
+li:nth-child(even) {
     background: blue;
 }
 
@@ -28,7 +28,7 @@ li:nth-child(even){
     margin-top: 200px;
 }
 
-.exBA::before{
+.exBA::before {
     content:"";
     display: block;
     height: 50px;
@@ -36,10 +36,26 @@ li:nth-child(even){
     background: red;
 }
 
-.exBA::after{
+.exBA::after {
     content:"";
     display: block;
     height: 50px;
     width: 50px;
     background: blue;
+}
+
+/* Properties */
+#couleur {
+    background: rgba(210, 104, 219,0.1);
+}
+
+#cir {
+    width: 150px;
+    height: 150px;
+    background: pink;
+    /* border-radius: 50%; */
+    /* transform: scale(2); */
+    /* transform: translate(50px, 0); */
+    /* transform: rotate(30deg); */
+    transform: skew(20deg, 20deg);
 }
